@@ -9,16 +9,18 @@ div {
     
     height: 100%;
     width: 100%;
-    background-color: rgb(144, 108, 71);
+    background-color: rgb(70, 106, 189);
     user-select: none;
     opacity: 0.9;
 }
 .btn {
+    font-family: "Black Ops One", system-ui;
     flex-flow: row;
     background-color: aquamarine;
     width: 100px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 9px;
+    border: 3px solid rgb(90, 194, 160);
     align-items: center;
     justify-content: center;
     position: fixed;
@@ -29,10 +31,12 @@ div {
 }
 
 .counter1 {
+
+    font-family: "Black Ops One", system-ui;
     margin: 0;
-    background-color: rgb(201, 180, 157);
+    background-color: rgb(90, 194, 160);
     margin-bottom: 0%;
-    border: 2px solid rgb(72, 2, 2);
+    border: thick double  rgb(70, 106, 189);
     user-select: none;
    
 }
