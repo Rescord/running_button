@@ -16,7 +16,6 @@ function init()
   
   btn.style.left = w / 2 - btn.clientWidth / 2 + 'px';
   btn.style.top = h / 2 - btn.clientHeight / 2 + 'px';
-  console.log('h='+h,'w='+w);
 }
 
 
@@ -36,7 +35,6 @@ btn.addEventListener('mousemove', (e) => {
   
   newX = x + ((Math.random() > 0.5)? 1 * btn.clientWidth*2 + 80 : -1 * btn.clientWidth*2 - 80);
   newY = y + ((Math.random() > 0.5)? 1 * btn.clientHeight*2 + 80 : -1 * btn.clientHeight*2 - 80)
-  console.log(e);
     
   
     if(newY >= h - btn.clientHeight+4) {
