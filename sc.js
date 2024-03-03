@@ -1,4 +1,3 @@
-
 let h;
 let w;
 let x;
@@ -35,15 +34,15 @@ window.addEventListener('resize', function(event) {
 btn.addEventListener('mousemove', (e) => {
   let newX, newY;
   
-  newX = x + ((Math.random() > 0.5)? 1: -1)*btn.clientWidth*2 + 30;
-  newY = y + ((Math.random() > 0.5)? 1: -1)*btn.clientHeight*2 + 30;
+  newX = x + ((Math.random() > 0.5)? 1 * btn.clientWidth*2 + 80 : -1 * btn.clientWidth*2 - 80);
+  newY = y + ((Math.random() > 0.5)? 1 * btn.clientHeight*2 + 80 : -1 * btn.clientHeight*2 - 80)
   console.log(e);
     
   
     if(newY >= h - btn.clientHeight+4) {
         newY = h - btn.clientHeight-4 ;
     }
-    if(newX >= w - btn.clientWidth - 4 ) {
+    if(newX >= w - btn.clientWidth+4 ) {
         newX = w - btn.clientWidth-4;
     }
     if(newX < 0) {
@@ -60,7 +59,7 @@ btn.addEventListener('mousemove', (e) => {
 document.querySelector('#touchMeBtn').onclick = (event) => {
     if(event.target.classList.contains('btn'))
     counter++;
-    divCounter.textContent = "Ты попал" + " " + counter + " " + "раз(а)!";
+    divCounter.textContent = "Your hits:" + " " + counter;
     
 }
 
